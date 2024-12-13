@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="adfcefab-a680-466e-a8c3-b44d08687d42">
+    <data-source source="LOCAL" name="db" uuid="aaca3ba7-3f77-49b1-aefb-d885a03bc795">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\database\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Julieta\OneDrive\Documentos\mvp-puc-rio\crypto_play_api\database\db.sqlite3</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
       </jdbc-additional-properties>

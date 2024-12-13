@@ -1,74 +1,39 @@
-[2024-12-07 11:18:57,752] INFO _log() L97   192.168.15.6 - - [07/Dec/2024 11:18:57] "GET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 11:19:02,877] INFO _log() L97   192.168.15.6 - - [07/Dec/2024 11:19:02] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 11:19:02,905] INFO _log() L97   192.168.15.6 - - [07/Dec/2024 11:19:02] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 11:19:12,806] INFO _log() L97   192.168.15.6 - - [07/Dec/2024 11:19:12] "GET /moeda HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:39,493] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2024-12-07 21:09:58,852] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 21:09:58] "GET /moeda?nome=julieta HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-07 21:10:37,069] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.15.6:5000 - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:39,496] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:48,992] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:48] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:49,009] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:49] "[32mGET /openapi HTTP/1.1[0m" 308 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:49,035] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:49] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:49,109] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:49] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:50,393] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:50] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:50,422] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:50] "GET /openapi/swagger/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:50,426] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:50] "GET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:50,427] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:50] "GET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:03:50,642] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:03:50] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:04:03,078] ERROR log_exception() L875  Exception on /moeda [GET] - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py L875 
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 46, in get_moedas_moeda
-    content = urlopen(req).read()
-              ^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-                                                ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 49, in get_moedas_moeda
-    except urllib.error.HTTPError as e:
-           ^^^^^^
-NameError: name 'urllib' is not defined. Did you forget to import 'urllib'
-[2024-12-07 19:04:03,108] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:04:03] "[35m[1mGET /moeda?nome=btc HTTP/1.1[0m" 500 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:04:53,592] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2024-12-07 21:10:37,069] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-07 21:10:46,703] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 21:10:46] "[35m[1mGET /moeda?nome=btc HTTP/1.1[0m" 500 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-07 21:11:06,819] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.15.6:5000 - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:04:53,593] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:05:01,013] INFO _log() L97   192.168.15.6 - - [07/Dec/2024 19:05:01] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-07 21:11:06,819] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-07 21:11:26,061] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 21:11:26] "GET /moeda?nome=btc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:02:09,776] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.6:5000 - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:02:09,779] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:04,154] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:04] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:21,907] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:21] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:22,317] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:22] "GET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:22,320] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:22] "GET /openapi/swagger/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:22,320] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:22] "GET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:22,626] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:22] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,283] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,319] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "[36mGET /openapi/swagger/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,321] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,324] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,451] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:23,480] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:23] "GET /openapi/swagger/images/swagger.svg HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:03:26,497] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:03:26] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:07:43,435] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:07:43] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:08:00,769] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:08:00] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:09:13,718] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:09:13] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:09:22,406] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:09:22] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:10:11,408] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:10:11] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:13:07,550] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:13:07] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:13:35,052] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:13:35] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 18:14:21,478] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 18:14:21] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  

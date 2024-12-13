@@ -1,108 +1,32 @@
-[2024-12-07 19:06:21,795] ERROR log_exception() L875  Exception on /moeda [GET] - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py L875 
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 42, in get_moedas_moeda
-    content = urlopen(req).read()
-              ^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-                                                ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 45, in get_moedas_moeda
-    except urllib.error.HTTPError as e:
-           ^^^^^^
-NameError: name 'urllib' is not defined. Did you forget to import 'urllib'
-[2024-12-07 19:06:26,864] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:06:26] "[35m[1mGET /moeda?nome=Teste HTTP/1.1[0m" 500 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:09:51,399] ERROR log_exception() L875  Exception on /moeda [GET] - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py L875 
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 42, in get_moedas_moeda
-    content = urlopen(req).read()
-              ^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "C:\Python312\Lib\urllib\request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-                                                ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\new-app.py", line 45, in get_moedas_moeda
-    except urllib.error.HTTPError as e:
-           ^^^^^^
-NameError: name 'urllib' is not defined. Did you forget to import 'urllib'
-[2024-12-07 19:09:51,423] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:09:51] "[35m[1mGET /moeda?nome=btc HTTP/1.1[0m" 500 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:11:02,992] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.15.6:5000 - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:11:02,993] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:11:13,666] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:11:13] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:11:13,811] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:11:13] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
-[2024-12-07 19:11:13,813] INFO _log() L97   127.0.0.1 - - [07/Dec/2024 19:11:13] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:30:31,511] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:30:31] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:31:43,420] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:31:43] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:32:02,971] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:32:02] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:32:04,089] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:32:04] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:32:04,710] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:32:04] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:33:07,811] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:33:07] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:33:07,997] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:33:07] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:33:08,198] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:33:08] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:33:14,306] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:33:14] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:33:14,878] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:33:14] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:40:58,509] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:40:58] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:42:38,005] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:42:38] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:43:29,568] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:43:29] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:44:02,480] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:44:02] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:44:25,919] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:44:25] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 22:44:29,182] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 22:44:29] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:00:49,025] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:00:49] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:00:52,884] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:00:52] "GET /moeda?nome=btc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:01:57,934] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:01:57] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:02:02,702] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:02:02] "GET /moeda?nome=btc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:02:29,930] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:02:29] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:03:18,009] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:03:18] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:03:32,300] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:03:32] "GET /moeda?nome=btc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:03:33,205] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:03:33] "GET /moeda?nome=btc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:12:37,716] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:12:37] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:12:49,700] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:12:49] "GET /moeda?nome=eth HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:14:08,930] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:14:08] "GET /moeda?nome=ethereum HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:17:27,462] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:17:27] "GET /moeda?nome=abc HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:17:34,279] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:17:34] "GET /moeda?nome=abcde HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:18:04,475] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:18:04] "GET /moeda?nome=abcdef HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:18:04,475] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:18:04] "GET /moeda?nome=abcdef HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
+[2024-12-08 23:18:04,491] INFO _log() L97   127.0.0.1 - - [08/Dec/2024 23:18:04] "GET /moeda?nome=abcdef HTTP/1.1" 200 - - call_trace=C:\Users\Julieta\OneDrive\Documentos\PUC-RIO-REPOS\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\api\env\Lib\site-packages\werkzeug\_internal.py L97  
