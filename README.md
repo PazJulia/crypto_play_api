@@ -1,8 +1,6 @@
 # CriptoPlay API
 
-Este projeto faz parte do material didático da disciplina **Desenvolvimento Full Stack Básico**.
-
-O objetivo é ilustrar o conteúdo apresentado ao longo das aulas da disciplina, desenvolvendo uma API que lida com operações de criptomoedas.
+CryptoPlay é uma aplicação web que permite simulação de compra e venda de criptomoedas, utilizando a API do CoinGecko para buscar informações atualizadas sobre os preços das moedas.
 
 ---
 
