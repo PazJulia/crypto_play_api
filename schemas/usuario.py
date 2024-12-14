@@ -5,7 +5,7 @@ from typing import List, Optional
 class MoedaSchema(BaseModel):
     nome: str
     coin_gecko_id: str
-    valor_comprado_brl: float
+    cota: float
     simbolo_url: str
 
 class UsuarioSchema(BaseModel):

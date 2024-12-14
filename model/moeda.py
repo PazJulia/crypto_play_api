@@ -11,15 +11,15 @@ class Moeda(Base):
     id = Column(Integer, primary_key=True)
     nome = Column(String)
     coin_gecko_id = Column(String)
-    valor_comprado_brl = Column(Float)
+    cota = Column(Float)
     simbolo_url = Column(String)
     data_inseracao = Column(DateTime, default=datetime.now())
     usuario_id = Column(Integer, ForeignKey('usuario.id'))  # Relacionamento com o usuário
 
-def __init__(self, nome:str, coin_gecko_id:str, valor_comprado_brl:Float, simbolo_url:str, usuario_id: int, data_insercao:Union[DateTime, None] = None):
+def __init__(self, nome:str, coin_gecko_id:str, cota:Float, simbolo_url:str, usuario_id: int, data_insercao:Union[DateTime, None] = None):
         self.nome = nome
         self.coin_gecko_id = coin_gecko_id
-        self.valor_comprado_brl = valor_comprado_brl
+        self.cota = cota
         self.simbolo_url = simbolo_url
         self.usuario_id = usuario_id
 
@@ -30,5 +30,5 @@ def __init__(self, nome:str, coin_gecko_id:str, valor_comprado_brl:Float, simbol
 class MoedaSchema(Schema):
     nome: str = ""
     coin_gecko_id: str = ""
-    valor_comprado_brl: float = ""
+    cota: float = ""
     simbolo_url: str = ""
